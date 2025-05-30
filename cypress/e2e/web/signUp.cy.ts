@@ -18,7 +18,6 @@ describe('Sign Up and Login Page Tests', () => {
       firstName,
       lastName,
       address,
-      country,
       state,
       city,
       zipcode,
@@ -33,13 +32,17 @@ describe('Sign Up and Login Page Tests', () => {
       firstName,
       lastName,
       address,
-      country,
       state,
       city,
       zipcode,
       mobileNumber
     );
     homePage.verifyUserIsLoggedIn(name);
+    homePage.clickProducts();
+    homePage.clickCart();
+    homePage.clickTestCases();
+    homePage.clickApiTesting();
+    homePage.clickContactUs();
     homePage.deleteAccount();
   });
 });

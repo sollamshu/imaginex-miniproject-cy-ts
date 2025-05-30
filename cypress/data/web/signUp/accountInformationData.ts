@@ -5,7 +5,6 @@ export const accountInformationData = {
   firstName: 'Sol',
   lastName: 'Lam',
   address: 'Address',
-  country: 'United States',
   state: 'Utah',
   city: 'Salt Lake City',
   zipcode: '12345',

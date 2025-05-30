@@ -6,8 +6,6 @@ export const SignUpLoginPageLocators = {
   firstNameInput: 'first_name',
   lastNameInput: 'last_name',
   addressInput: 'address',
-  countryDropdown: 'country',
-  countryOption: (country: string) => `option[value="${country}"]`,
   stateInput: 'state',
   cityInput: 'city',
   zipCodeInput: 'zipcode',

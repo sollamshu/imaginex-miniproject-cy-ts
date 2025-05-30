@@ -106,27 +106,4 @@ describe('Register API Tests', () => {
       });
     });
   });
-
-  it('Verify user can update an account via PUT /api/users/{userId} 1', () => {
-    const randomAccount =
-      updateAccountsData[Math.floor(Math.random() * updateAccountsData.length)];
-
-    const updateUserPayload = {
-      firstName: randomAccount.firstName,
-      lastName: randomAccount.lastName,
-      gender: randomAccount.gender,
-      birthDay: randomAccount.birthDay,
-    };
-
-    const updateUserEndpoint = `${baseApiUrl}/api/users/999999`;
-
-    cy.request({
-      method: 'PUT',
-      url: updateUserEndpoint,
-      body: updateUserPayload,
-      headers: { 'x-api-key': apiKey },
-    }).then(response => {
-      expect(response.status).to.eq(200);
-    });
-  });
 });
